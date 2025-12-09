@@ -1,0 +1,12 @@
+name: Demo1
+
+on:
+workflow_dispatch:
+jobs:
+executing-the-cmd:
+run-on: ubuntu-latest
+  - name: Checkout
+    uses: actions/checkout@v6-0.1
+
+  - name: execting the ls command
+    uses: ls -a
